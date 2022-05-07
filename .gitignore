@@ -1,3 +1,4 @@
 # ignore file/folder
 target
 nb-configuration.xml
+.DS_Store
