@@ -14,7 +14,7 @@ mapping プロジェクトを基に session を用いたパスワード認証機
 ただし、データベースとの連携はありません。  
   
   
-## logout ptriject  
+### logout project  
 未完成  
   
   
