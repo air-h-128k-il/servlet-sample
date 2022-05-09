@@ -20,6 +20,10 @@
         <servlet-name>LoginCheck</servlet-name>
         <servlet-class>info.phazor.logout.LoginCheck</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>info.phazor.logout.Logout</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Page1</servlet-name>
         <url-pattern>/page1</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>LoginCheck</servlet-name>
         <url-pattern>/logincheck</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

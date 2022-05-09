@@ -59,6 +59,7 @@ public class Page1 extends HttpServlet {
 
     out.println("<p><a href=\"/logout-1.0/page2\">患者検索</a></p>");
     out.println("<p><a href=\"/logout-1.0/page3\">検査オーダー</a></p>");
+    out.println("<p><a href=\"/logout-1.0/logout\">ログアウト</a></p>");
 
     out.println("</body>");
     out.println("</html>");

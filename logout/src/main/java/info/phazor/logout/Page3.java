@@ -51,6 +51,7 @@ import javax.servlet.http.HttpSession;
     out.println("<p><a href=\"/logout-1.0/page1\">外来待ち受け状況</a></p>");
     out.println("<p><a href=\"/logout-1.0/page2\">患者検索</a></p>");
     out.println("<p>検査オーダー</p>");
+    out.println("<p><a href=\"/logout-1.0/logout\">ログアウト</a></p>");
 
 
     out.println("</body>");
