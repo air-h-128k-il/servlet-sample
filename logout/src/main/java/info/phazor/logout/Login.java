@@ -41,6 +41,10 @@ public class Login extends HttpServlet {
 
       //session.setAttribute("status", null);
     }
+    if(status == "logout"){
+      out.println("<p>ログアウトしました</p>");
+      out.println("<p>再度ユーザー名とパスワードを入力して下さい</p>");        
+    }
     
     
     out.println("<form method=\"POST\" action=\"/logout-1.0/logincheck\" name=\"loginform\">");

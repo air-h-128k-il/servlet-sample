@@ -42,10 +42,7 @@ public class LoginCheck extends HttpServlet {
   }
 
   protected boolean authUser(String user, String pass){
-    /* ユーザー名とパスワードがあれば認証 */
-    /*if (user == null || user.length() == 0 || pass == null || pass.length() == 0){
-      return false;
-    }*/
+
     /* admin, admin に固定 */
     if (user.endsWith("admin") && pass.equals("admin")){
       return true;

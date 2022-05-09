@@ -45,7 +45,7 @@ public class Page1 extends HttpServlet {
     Object loginCheck = session.getAttribute("login");
     if (loginCheck != "OK"){
         //session.setAttribute("target", target);
-        response.sendRedirect("/login-1.0/login");
+        response.sendRedirect("/logout-1.0/login");
       }
     
 
