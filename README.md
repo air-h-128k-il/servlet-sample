@@ -2,7 +2,7 @@
 ### 概要
 今となっては懐かしい？サーブレットのサンプルコードです。  
   
-### mapping project
+### mapping(旧 link) project
 サーブレットの基本。  
 ページ間にリンクが貼ってあり、url mapping の確認用。 
   
