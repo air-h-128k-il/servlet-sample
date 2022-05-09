@@ -14,6 +14,10 @@ mapping プロジェクトを基に session を用いたパスワード認証機
 ただし、データベースとの連携はありません。  
   
   
+## logout ptriject  
+未完成  
+  
+  
   
 ### 動作環境
 MacOS Monterey  
