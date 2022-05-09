@@ -23,12 +23,12 @@ public class Page1 extends HttpServlet {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
     
+    /*
     String target = request.getRequestURI();
 
     HttpSession session = request.getSession(false);
 
-    if (session == null){
-      /* まだ認証されていない */
+    if (session == null){ 
       session = request.getSession(true);
       session.setAttribute("target", target);
 
@@ -36,11 +36,17 @@ public class Page1 extends HttpServlet {
     }else{
       Object loginCheck = session.getAttribute("login");
       if (loginCheck == null){
-        /* まだ認証されていない */
         session.setAttribute("target", target);
         response.sendRedirect("/link2-1.0/login");
       }
     }
+    */
+    HttpSession session = request.getSession(true);
+    Object loginCheck = session.getAttribute("login");
+    if (loginCheck != "OK"){
+        //session.setAttribute("target", target);
+        response.sendRedirect("/link2-1.0/login");
+      }
     
 
     out.println("<html>");

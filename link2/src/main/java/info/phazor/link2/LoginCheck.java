@@ -33,23 +33,26 @@ public class LoginCheck extends HttpServlet {
       /* 認証済みにセット */
       session.setAttribute("login", "OK");
 
-      /* 本来のアクセス先へ飛ばす */
-      //String target = (String)session.getAttribute("target");
-      //response.sendRedirect(target);
       response.sendRedirect("/link2-1.0/login");
     }else{
-      /* 認証に失敗したら、ログイン画面に戻す */
+      /* 認証に失敗してもその場に留まる。アラート出すとか工夫の余地あり */
       session.setAttribute("status", "Not Auth");
       response.sendRedirect("/link2-1.0/login");
     }
   }
 
   protected boolean authUser(String user, String pass){
-    /* 取りあえずユーザー名とパスワードが入力されていれば認証する */
-    if (user == null || user.length() == 0 || pass == null || pass.length() == 0){
+    /* ユーザー名とパスワードがあれば認証 */
+    /*if (user == null || user.length() == 0 || pass == null || pass.length() == 0){
       return false;
-    }
-
-    return true;
+    }*/
+    /* admin, admin に固定 */
+    if (user.endsWith("admin") && pass.equals("admin")){
+      return true;
+    }else{
+      return false;
+  }
+    
+    //return false;
   }
 }

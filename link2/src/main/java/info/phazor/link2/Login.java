@@ -35,12 +35,14 @@ public class Login extends HttpServlet {
     /* 認証失敗から呼び出されたのかどうか */
     Object status = session.getAttribute("status");
 
-    if (status != null){
+    if (status == "Not Auth"){
       out.println("<p>認証に失敗しました</p>");
       out.println("<p>再度ユーザー名とパスワードを入力して下さい</p>");
 
-      session.setAttribute("status", null);
+      //session.setAttribute("status", null);
     }
+    
+    
     out.println("<form method=\"POST\" action=\"/link2-1.0/logincheck\" name=\"loginform\">");
     out.println("<table>");
     out.println("<tr>");
