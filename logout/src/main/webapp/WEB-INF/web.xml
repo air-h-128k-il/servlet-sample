@@ -2,23 +2,23 @@
 <web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
     <servlet>
         <servlet-name>Page1</servlet-name>
-        <servlet-class>info.phazor.login.Page1</servlet-class>
+        <servlet-class>info.phazor.logout.Page1</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Page2</servlet-name>
-        <servlet-class>info.phazor.login.Page2</servlet-class>
+        <servlet-class>info.phazor.logout.Page2</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Page3</servlet-name>
-        <servlet-class>info.phazor.login.Page3</servlet-class>
+        <servlet-class>info.phazor.logout.Page3</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>info.phazor.login.Login</servlet-class>
+        <servlet-class>info.phazor.logout.Login</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LoginCheck</servlet-name>
-        <servlet-class>info.phazor.login.LoginCheck</servlet-class>
+        <servlet-class>info.phazor.logout.LoginCheck</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Page1</servlet-name>

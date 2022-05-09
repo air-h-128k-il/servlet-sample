@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
-package info.phazor.login;
+package info.phazor.logout;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,11 +33,11 @@ public class LoginCheck extends HttpServlet {
       /* 認証済みにセット */
       session.setAttribute("login", "OK");
 
-      response.sendRedirect("/login-1.0/login");
+      response.sendRedirect("/logout-1.0/login");
     }else{
       /* 認証に失敗してもその場に留まる。アラート出すとか工夫の余地あり */
       session.setAttribute("status", "Not Auth");
-      response.sendRedirect("/login-1.0/login");
+      response.sendRedirect("/logout-1.0/login");
     }
   }
 

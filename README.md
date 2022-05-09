@@ -15,6 +15,7 @@ mapping プロジェクトを基に session を用いたパスワード認証機
   
   
 ### logout project  
+login project にログアウト機能を追加。  
 未完成  
   
   

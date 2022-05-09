@@ -1,4 +1,4 @@
-package info.phazor.login.resources;
+package info.phazor.logout.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

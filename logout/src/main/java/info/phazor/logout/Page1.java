@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
-package info.phazor.login;
+package info.phazor.logout;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -57,8 +57,8 @@ public class Page1 extends HttpServlet {
 
     out.println("<p>待合患者リスト</p>");
 
-    out.println("<p><a href=\"/login-1.0/page2\">患者検索</a></p>");
-    out.println("<p><a href=\"/login-1.0/page3\">検査オーダー</a></p>");
+    out.println("<p><a href=\"/logout-1.0/page2\">患者検索</a></p>");
+    out.println("<p><a href=\"/logout-1.0/page3\">検査オーダー</a></p>");
 
     out.println("</body>");
     out.println("</html>");

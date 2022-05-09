@@ -1,4 +1,4 @@
-package info.phazor.login;
+package info.phazor.logout;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
